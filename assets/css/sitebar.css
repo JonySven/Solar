@@ -1,0 +1,182 @@
+:root {
+  --color-primary: #0f4980;
+  --color-primary-lighter: #1a7edb;
+  --color-primary-light: #1463ad;
+  --color-primary-dark: #0a2f52;
+  --color-primary-darken: #041525;
+  --color-accent: #ec681d;
+  --color-second: var(--color-primary);
+  --color-black: #1e1e1e;
+  --color-gray-text: #616160;
+  --color-white: #fff;
+  --color-bg: #fff;
+  --color-gray: #787878;
+  --color-gray-light: #e5e5e5;
+  --color-gray-lighten: #f2f2f2;
+}
+
+.sideBar {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  background: #0a2f52;
+  padding-left: 10px;
+}
+.sideBar .sideBar__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 999;
+}
+.sideBar .sideBar__item .sideBar__item__menu-logo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.sideBar .sideBar__item .sideBar__item__menu-logo .sideBar_menu-btn {
+  display: block;
+  color: #fff;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  background-color: #0a2f52;
+  top: 15px;
+  left: 27px;
+  z-index: 200;
+}
+.sideBar .sideBar__item .sideBar__item__menu-logo .sideBar_menu-btn span,
+.sideBar .sideBar__item .sideBar__item__menu-logo .sideBar_menu-btn span:before,
+.sideBar .sideBar__item .sideBar__item__menu-logo .sideBar_menu-btn span:after {
+  position: absolute;
+  top: 53%;
+  margin-top: -3px;
+  left: 50%;
+  margin-left: -15px;
+  width: 30px;
+  height: 6px;
+  background: #fff;
+  border-radius: 40px;
+}
+.sideBar .sideBar__item .sideBar__item__menu-logo .sideBar_menu-logo {
+  position: relative;
+  z-index: 50;
+  padding: 15px;
+}
+.sideBar .sideBar__item .sideBar_item_social {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  z-index: 50;
+  left: 20px;
+  top: auto;
+}
+.sideBar .sideBar__item .sideBar_item_social .social {
+  margin-top: 5px;
+}
+
+.sideBar__activ {
+  left: -180px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 50px;
+  position: absolute;
+  min-height: 100vh;
+  z-index: 1;
+  background-color: #0a2f52;
+  padding-left: 10px;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  top: 0;
+}
+.sideBar__activ .sideBar__activ__btn {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: #fff;
+  text-decoration: none;
+  padding-right: 45px;
+  margin-top: 40px;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.sideBar__activ .sideBar__activ__btn:hover {
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+.show {
+  left: 93px;
+  top: 0;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  position: fixed;
+}
+
+.sideBar_menu-btn span:before,
+.sideBar_menu-btn span:after {
+  content: "";
+  display: block;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.sideBar_menu-btn span:before {
+  -webkit-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.sideBar_menu-btn span:after {
+  -webkit-transform: translateY(10px);
+      -ms-transform: translateY(10px);
+          transform: translateY(10px);
+}

@@ -1,0 +1,52 @@
+@import url(../ff/microsoftsansserif.ttf);
+:root {
+  --color-primary: #0f4980;
+  --color-primary-lighter: #1a7edb;
+  --color-primary-light: #1463ad;
+  --color-primary-dark: #0a2f52;
+  --color-primary-darken: #041525;
+  --color-accent: #ec681d;
+  --color-second: var(--color-primary);
+  --color-black: #1e1e1e;
+  --color-gray-text: #616160;
+  --color-white: #fff;
+  --color-bg: #fff;
+  --color-gray: #787878;
+  --color-gray-light: #e5e5e5;
+  --color-gray-lighten: #f2f2f2;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+  overflow-y: hidden;
+}
+
+main .about {
+  padding: 180px 250px 210px;
+}
+main .about h1 {
+  font-weight: 900;
+  font-size: 36px;
+}
+main .about p {
+  line-height: 1.5;
+  margin-top: 10px;
+}
+@media (min-width: 500px) and (max-width: 1024px){
+  main .about{
+    padding-top: 227px;
+    padding-right: 35px;
+    padding-left: 110px;
+    padding-bottom: 228px;
+  }
+}
+@media (min-width: 320px) and (max-width: 499px) {
+  main .about {
+    padding-top: 66px;
+    padding-right: 20px;
+    padding-left: 111px;
+    padding-bottom: 42px;
+  }
+}

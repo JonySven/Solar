@@ -1,0 +1,192 @@
+@import url(../ff/microsoftsansserif.ttf);
+:root {
+  --color-primary: #0f4980;
+  --color-primary-lighter: #1a7edb;
+  --color-primary-light: #1463ad;
+  --color-primary-dark: #0a2f52;
+  --color-primary-darken: #041525;
+  --color-accent: #ec681d;
+  --color-second: var(--color-primary);
+  --color-black: #1e1e1e;
+  --color-gray-text: #616160;
+  --color-white: #fff;
+  --color-bg: #fff;
+  --color-gray: #787878;
+  --color-gray-light: #e5e5e5;
+  --color-gray-lighten: #f2f2f2;
+}
+
+header {
+  max-width: 100%;
+  background-color: var(--color-primary);
+}
+header .container {
+  margin: 0 auto;
+  max-width: 1300px;
+  width: 100%;
+}
+header .container .wrap {
+  margin: 0px auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: translateX(112px);
+      -ms-transform: translateX(112px);
+          transform: translateX(112px);
+}
+header .container .wrap .wrap-reg-form {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  line-height: 1.2;
+  font-size: 24px;
+  font-weight: 700;
+}
+header .container .wrap .wrap-reg-form h2 {
+  margin: 0;
+  margin-bottom: 15px;
+  color: white;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+header .container .wrap .wrap-reg-form p {
+  font-size: 18px;
+  line-height: 1.2;
+  color: white;
+  margin: 0;
+  margin-bottom: 15px;
+  font-weight: 200;
+}
+header .container .wrap .wrap-reg-form .nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 28px;
+  left: 0;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+header .container .wrap .wrap-reg-form .nav .nav_reg_btn {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 60px;
+  border: none;
+  border-radius: 30px;
+  text-transform: uppercase;
+  padding: 0 15px;
+  font-size: 18px;
+  font-weight: 800;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--color-gray-text);
+  background: var(--color-white);
+  text-decoration: none;
+  margin: 0 11px 15px;
+  width: 35%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+}
+header .container .wrap .wrap-reg-form .nav .nav_reg_btn:hover {
+  color: var(--color-primary);
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+header .container .wrap .wrap-info {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  margin-left: auto;
+  margin-right: 200px;
+  height: 280px;
+  width: 120px;
+  background: var(--color-white);
+  color: var(--color-black);
+  padding: 0 21px 30px;
+  position: relative;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
+header .container .wrap .wrap-info .info-iner {
+  margin-top: 70px;
+}
+header .container .wrap .wrap-info .info-iner span {
+  color: var(--color-accent);
+  font-weight: 700;
+  font-size: 64px;
+  margin: 0;
+}
+header .container .wrap .wrap-info .info-iner .etap {
+  color: var(--color-gray);
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: lowercase;
+  margin: 0;
+}
+header .container .wrap .wrap-info .info-iner .km {
+  position: absolute;
+  bottom: 30px;
+  color: var(--color-gray);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+@media (min-width: 480px) and (max-width: 991px) {
+  header .container .wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  header .container .wrap .wrap-reg-form .nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+@media (min-width: 320px) and (max-width: 479px) {
+  header .container .wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  header .container .wrap .wrap-reg-form {
+    padding-top: 29px;
+    padding-bottom: 53px;
+  }
+
+  header .container .wrap .wrap-reg-form .nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  header .container .wrap .wrap-reg-form .nav .nav_reg_btn {
+    padding: 0 30px;
+    font-size: 15px;
+    height: 40px;
+  }
+}

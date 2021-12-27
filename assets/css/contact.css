@@ -1,0 +1,176 @@
+@import url(../ff/microsoftsansserif.ttf);
+:root {
+  --color-primary: #0f4980;
+  --color-primary-lighter: #1a7edb;
+  --color-primary-light: #1463ad;
+  --color-primary-dark: #0a2f52;
+  --color-primary-darken: #041525;
+  --color-accent: #ec681d;
+  --color-second: var(--color-primary);
+  --color-black: #1e1e1e;
+  --color-gray-text: #616160;
+  --color-white: #fff;
+  --color-bg: #fff;
+  --color-gray: #787878;
+  --color-gray-light: #e5e5e5;
+  --color-gray-lighten: #f2f2f2;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+  background-color: var(--color-gray-lighten);
+}
+body a {
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+header .wrap {
+  margin-top: 17px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+header .wrap .bgfon {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background-image: url(../img/a2aa8.jpg);
+  background-size: contain;
+}
+header .wrap .subtitle {
+  font-size: 16px;
+  margin-top: 8px;
+  color: #777777;
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+}
+main .item-link {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+main .item-link .link {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 40px;
+  background: #9a1918;
+  width: 800px;
+  padding: 12px 0;
+  margin-bottom: 15px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .item-link .link img {
+  padding-left: 15px;
+  margin-top: 3px;
+  height: 30px;
+}
+main .item-link .link .text {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: auto;
+      -ms-flex: auto;
+          flex: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 40px;
+}
+main .item-link .link .text .title {
+  color: var(--color-white);
+  font-size: 17px;
+}
+main .item-link .link .text .subtitle {
+  color: #dbdbdb;
+  margin-top: 5px;
+}
+main .item-link .block-title {
+  margin-bottom: 15px;
+}
+main .item-link #teleg {
+  background-color: var(--color-primary-lighter);
+}
+main .item-link #face {
+  background-color: var(--color-primary-light);
+}
+main .item-link #inst {
+  background-color: #f00075;
+}
+main .item-link #sol {
+  background-color: #0f4980;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  main .item-link .link {
+    width: 700px;
+  }
+}
+@media (min-width: 400px) and (max-width: 767px) {
+  main .item-link .link {
+    width: 360px;
+  }
+}
+@media (min-width: 320px) and (max-width: 399px) {
+  main .item-link .link {
+    width: 280px;
+  }
+}
